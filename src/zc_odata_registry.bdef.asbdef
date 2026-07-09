@@ -1,0 +1,18 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_ODATA_REGISTRY alias OdataRegistry
+use etag
+{
+  use create;
+//  use update;
+  use delete;
+//  use action TakeSnapshot;
+  use association _Version { create; }
+}
+
+define behavior for ZC_ODATA_VERSION alias OdataVersion
+{
+  use delete;
+  use association _Registry;
+}

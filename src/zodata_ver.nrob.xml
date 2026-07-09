@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_NROB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <OBJECT>ZODATA_VER</OBJECT>
+    <DOMLEN>NUMC10</DOMLEN>
+    <PERCENTAGE>90.0</PERCENTAGE>
+    <UNAME>DEV-174</UNAME>
+    <UDATE>2026-05-29</UDATE>
+    <UTIME>10:57:32</UTIME>
+   </ATTRIBUTES>
+   <TEXT>
+    <LANGU>E</LANGU>
+    <OBJECT>ZODATA_VER</OBJECT>
+    <TXT>Version ID for OData Metadata Snapshot</TXT>
+    <TXTSHORT>Version ID for OData</TXTSHORT>
+   </TEXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

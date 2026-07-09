@@ -1,0 +1,65 @@
+managed implementation in class ZBP_I_ODATA_REGISTRY unique;
+strict ( 2 );
+
+define behavior for ZI_ODATA_REGISTRY alias OdataRegistry
+persistent table zodata_registry
+lock master
+authorization master ( instance )
+etag master LastChangeAt
+{
+  create;
+  update;
+  delete;
+
+  action TakeSnapshot result [1] $self;
+
+  field ( readonly )  RegisteredBy, RegisteredAt, LastChangeAt, Namespace, ServiceName;
+  field ( mandatory ) ServiceId, ServiceType;
+
+  determination setDerivedFields on save { create; }
+  validation validateServiceType on save { create; update; field ServiceId, ServiceName, ServiceType, VersionNo; }
+
+  association _Version { create; }
+
+  mapping for zodata_registry
+  {
+    ServiceId    = service_id;
+    ServiceName  = service_name;
+    ServiceType  = service_type;
+    Namespace    = namespace;
+    VersionNo    = version_no;
+    Status       = status;
+    RegisteredBy = registered_by;
+    RegisteredAt = registered_at;
+    LastChangeAt = last_change_at;
+    Description  = description;
+  }
+}
+
+define behavior for ZI_ODATA_VERSION alias OdataVersion
+persistent table zodata_version
+lock dependent by _Registry
+authorization dependent by _Registry
+{
+  delete;
+
+  field ( readonly )  ServiceId, SnapshotId, SnapshotVersion,
+                      MetadataHash, MetadataXml, SnapshotBy,
+                      SnapshotAt, IsChanged;
+  field ( mandatory ) TriggerType;
+
+  association _Registry;
+
+  mapping for zodata_version
+  {
+    ServiceId       = service_id;
+    SnapshotId      = snapshot_id;
+    SnapshotVersion = snapshot_version;
+    MetadataHash    = metadata_hash;
+    MetadataXml     = metadata_xml;
+    SnapshotBy      = snapshot_by;
+    SnapshotAt      = snapshot_at;
+    TriggerType     = trigger_type;
+    IsChanged       = is_changed;
+  }
+}

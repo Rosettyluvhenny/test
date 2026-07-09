@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZMG_GSU26GSP09</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>GSP09 Package – Shared Messages</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>User &amp;1 is not authorized (no active role)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Invalid input: &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>101</MSGNR>
+     <TEXT>Service &amp;1 is not ACTIVE – create version disabled</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>102</MSGNR>
+     <TEXT>Service &amp;1 (type &amp;2) not found on Gateway</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>103</MSGNR>
+     <TEXT>No metadata changes detected for &amp;1 – version not created</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>104</MSGNR>
+     <TEXT>Version &amp;2 created successfully for service &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>105</MSGNR>
+     <TEXT>Failed to INSERT version &amp;1 into ZODATA_VERSIONS</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>106</MSGNR>
+     <TEXT>Failed to UPDATE LAST_VERSION_DATE for service &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>201</MSGNR>
+     <TEXT>Failed to fetch V2 metadata for service &amp;1: &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>202</MSGNR>
+     <TEXT>Failed to fetch V4 metadata for service &amp;1: &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>301</MSGNR>
+     <TEXT>XML to Base64 conversion failed for service &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>302</MSGNR>
+     <TEXT>Base64 to XML conversion failed for version &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>401</MSGNR>
+     <TEXT>Failed to write audit log for service &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>501</MSGNR>
+     <TEXT>Version &amp;1 not found in ZODATA_VERSIONS</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>502</MSGNR>
+     <TEXT>Comparison between version &amp;1 and version &amp;2 failed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>601</MSGNR>
+     <TEXT>Number range ZODATA_VER exhausted or not configured</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>602</MSGNR>
+     <TEXT>Number range ZODATA_LOG exhausted or not configured</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMG_GSU26GSP09</ARBGB>
+     <MSGNR>701</MSGNR>
+     <TEXT>Auto-scheduler failed for service &amp;1: &amp;2</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

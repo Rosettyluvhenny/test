@@ -1,0 +1,6 @@
+@EndUserText.label: 'OData Registry Service Definition'
+define service ZSD_ODATA_REGISTRY {
+  expose ZC_ODATA_REGISTRY as OdataRegistry;
+  expose ZC_ODATA_VERSION as OdataVersion;
+  expose ZC_ODATA_ANALYZE as OdataAnalyze;
+}
